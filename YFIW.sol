@@ -1,14 +1,14 @@
  pragma solidity ^0.4.21;
 
         /*
-        YFID is the abbreviation of YFIDesign.
-        YFID's success is due to the core technology from YFI.
+        YFIW is the abbreviation of YFIWorks.
+        YFIW's success is due to the core technology from YFI.
         The development core team comes from the United States, China, and South Korea.
         The YFI technology is independently forked and upgraded to a cluster interactive intelligent aggregator,
         which aggregates multiple platforms Agreement to realize the interaction of assets on different decentralized liquidity platforms.
         */
 
-         contract  IYFID {
+         contract  IYFIW {
 
             uint256 public totalSupply;
 
@@ -76,7 +76,7 @@
         }
 
 
-        contract YFID is IYFID {
+        contract YFIW is IYFIW {
             using SafeMath for uint256;
 
             mapping (address => uint256) public balances;

@@ -1,0 +1,12 @@
+Chrome Manager Code Fixes:
+
+1. String Escape Error - Change style=\'Accent.Treeview\' to style='Accent.Treeview'
+2. WebSocket Import - Add try/except for websocket import
+3. CDP Connection - Fix endpoint to use /json/list first
+4. Proxy Config - Fix proxy parsing with @ symbol
+5. Mouse Wheel - Fix duplicate variable assignment
+6. Screen Detection - Simplify screen enumeration
+7. Treeview Headers - Add missing column headers
+
+Install dependencies:
+pip install pywin32 sv-ttk keyboard mouse psutil requests websocket-client

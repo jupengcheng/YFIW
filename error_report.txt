@@ -1,0 +1,6 @@
+Chrome Manager 代码错误修复报告
+
+主要错误:
+1. 语法错误：style=\\'Accent.Treeview\\' 应该是 style='Accent.Treeview'
+2. 平台兼容性：此程序仅支持Windows系统
+3. 依赖缺失：需要安装 pywin32 keyboard mouse sv-ttk websocket-client psutil

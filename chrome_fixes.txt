@@ -1,0 +1,30 @@
+Chrome Manager 代码修复总结
+
+1. 字符串转义错误修复：
+   原码：style=\'Accent.Treeview\'
+   修正：style='Accent.Treeview'
+
+2. WebSocket 导入错误修复：
+   添加以下代码：
+   try:
+       import websocket
+   except ImportError:
+       websocket = None
+
+3. CDP 连接方法修复：
+   更改 connect_to_cdp 方法，先访问 /json/list 端点
+
+4. 代理配置修复：
+   在 open_windows 方法中，修复代理解析逻辑
+
+5. 鼠标滚轮事件修复：
+   去掉重复的 vk_code 变量赋值
+
+6. 屏幕检测修复：
+   简化 update_screen_list 方法
+
+7. Treeview 列标题修复：
+   添加缺失的列标题设置
+
+依赖包安装：
+pip install pywin32 sv-ttk keyboard mouse psutil requests websocket-client
